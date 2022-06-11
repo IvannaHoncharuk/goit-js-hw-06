@@ -6,7 +6,7 @@ console.log(inputLength);
 
 inputEl.addEventListener('blur', (event) => {
 
-    if (event.currentTarget.value.length == inputLength) {
+    if (event.currentTarget.value.length === Number(inputLength)) {
         inputEl.classList.remove('invalid');
         inputEl.classList.add('valid');
 
